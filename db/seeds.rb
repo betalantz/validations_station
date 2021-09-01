@@ -15,7 +15,7 @@ t8 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: 
 puts "🌱 Seeding platforms..."
 Station.all.each {|s|
     Faker::Number.within(range: 4..10).times {|i|
-        Platform.create(platform_num: "#{i+1}", station: s)
+        Platform.create(platform_num: i+1, station: s)
     }
 }
 

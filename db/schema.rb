@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2021_09_01_173632) do
   end
 
   create_table "platforms", force: :cascade do |t|
-    t.string "platform_num"
+    t.integer "platform_num"
     t.integer "station_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
