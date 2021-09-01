@@ -26,7 +26,7 @@ Test your model validations in the console by trying to create model objects whi
 
 ## `Train`
 - must have an origin and a destination
-- origin and destination strings must be between 3 and 16 characters long, inclusive
+- origin and destination strings must be between 3 and 20 characters long, inclusive
 - is_express must be a boolean
 
 ## `Assignment`
