@@ -4,6 +4,8 @@ You've been tasked with designing a system that will automate some operations fo
 
 You'll be adding validations to the provided models as specified below using [ActiveRecord validation helpers](https://guides.rubyonrails.org/active_record_validations.html). There is also some seed data provided in `db/seeds.rb` to give you some data so you can test your models.
 
+![gare du nord paris](./public/03-gare-du-nord-cr-corbis.jpg)
+
 ## Setup
 - `rails db:migrate`
 - `rails db:seed`
@@ -18,7 +20,7 @@ Station --< Platform --< Assignment >--Train
 
 The relationship between `platforms` and `trains` is many-to-many through `assignments` because the same train could be assigned to different platforms in the same station on different days depending on the other traffic through the station.
 
-![domain diagram](train_station.png)
+![domain diagram](./public/train_station.png)
 
 ## Instructions
 
