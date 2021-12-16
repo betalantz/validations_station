@@ -4,5 +4,5 @@ class Train < ApplicationRecord
 
     validates :origin, :destination, length: { in: 3..24 }
     # validates :is_express, inclusion: [true, false] this is redundant
-
+    validates :service_type, inclusion: ["express", "local"]
 end
