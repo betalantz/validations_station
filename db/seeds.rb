@@ -3,14 +3,15 @@ qc = Station.create(name: "Queen's Cross", city: "Brambury")
 us = Station.create(name: "Union Station", city: "Upton Downs")
 
 puts "🌱 Seeding trains..."
-t1 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t2 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t3 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t4 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t5 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t6 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t7 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
-t8 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), is_express: Faker::Boolean.boolean, origin: Faker::Address.city, destination: Faker::Address.city)
+service = ["express", "local"]
+t1 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t2 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t3 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t4 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t5 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t6 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t7 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
+t8 = Train.create(train_num: Faker::Number.decimal_part(digits: 3), service_type: service.sample, origin: Faker::Address.city, destination: Faker::Address.city)
 
 puts "🌱 Seeding platforms..."
 Station.all.each {|s|

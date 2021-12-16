@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_09_01_173632) do
 
   create_table "trains", force: :cascade do |t|
     t.string "train_num"
-    t.boolean "is_express"
+    t.string "service_type"
     t.string "origin"
     t.string "destination"
     t.datetime "created_at", precision: 6, null: false

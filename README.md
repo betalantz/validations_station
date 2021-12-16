@@ -7,6 +7,7 @@ You'll be adding validations to the provided models as specified below using [Ac
 ![gare du nord paris](./public/03-gare-du-nord-cr-corbis.jpg)
 
 ## Setup
+- `bundle install`
 - `rails db:migrate`
 - `rails db:seed`
 - `rails c`
@@ -49,7 +50,7 @@ _Note: Remember that model objects which fail ActiveRecord validations contain a
 ### `Train`
 - must have an `origin` and a `destination`
 - `origin` and `destination` strings must be between 3 and 24 characters long, inclusive
-- `is_express` must be a boolean
+- `service_type` must be either "express" or "local"
 
 ### `Assignment`
 - must have `arrival` and `departure` times
