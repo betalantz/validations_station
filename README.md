@@ -12,7 +12,7 @@ You'll be adding validations to the provided models as specified below using [Ac
 - `rails db:seed`
 - `rails c`
 
-_Note: If you need to reseed your database, be sure to run `rake db:seed:replant` so as not to create duplicte records._
+_Note: If you need to reseed your database, be sure to run `rake db:seed:replant` so as not to create duplicate records._
 
 ## Model Associations
 The migrations and models are already done for you, and associations should be as follows: 
